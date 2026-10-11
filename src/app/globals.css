@@ -1,0 +1,139 @@
+/* Luxtronics Premium Editorial Light Mode Design System */
+:root {
+  --bg-paper: #faf9f5;
+  --bg-surface: #ffffff;
+  --bg-soft: #f2f0e9;
+  --text-ink: #111217;
+  --text-muted: #5e6375;
+  --border-line: #e6e3da;
+  --font-heading: 'Outfit', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #faf9f5;
+  color: #111217;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+/* Luxury Gold & Ink Accents */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #a36b0f 0%, #c88a1e 50%, #e5ab37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-badge {
+  background: #fdf8ed;
+  border: 1px solid #ebd49f;
+  color: #94600a;
+}
+
+/* Glassmorphism Header (Light Mode) */
+.glass-header {
+  background: rgba(250, 249, 245, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid #e8e5dc;
+}
+
+/* Luxury Paper Cards */
+.glass-card {
+  background: #ffffff;
+  border: 1px solid #e7e4db;
+  box-shadow: 0 4px 20px -2px rgba(17, 18, 23, 0.05), 0 2px 6px -1px rgba(17, 18, 23, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: #c88a1e;
+  box-shadow: 0 16px 36px -4px rgba(200, 138, 30, 0.12), 0 6px 14px -2px rgba(17, 18, 23, 0.04);
+  transform: translateY(-3px);
+}
+
+/* Premium Primary Gold/Black Buttons */
+.gold-btn {
+  background: linear-gradient(135deg, #d89624 0%, #ba7b10 100%);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(186, 123, 16, 0.25);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(186, 123, 16, 0.38);
+  filter: brightness(1.05);
+}
+
+.dark-btn {
+  background: #111217;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(17, 18, 23, 0.15);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark-btn:hover {
+  background: #242630;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(17, 18, 23, 0.25);
+}
+
+/* Subtle Editorial Dot Pattern */
+.subtle-grid-bg {
+  background-image: radial-gradient(rgba(186, 123, 16, 0.1) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Hero Carousel Animations */
+@keyframes heroFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroImageZoom {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-hero-fade {
+  animation: heroFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-hero-image {
+  animation: heroImageZoom 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Refined Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f2ea;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4cfc1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ba7b10;
+}
